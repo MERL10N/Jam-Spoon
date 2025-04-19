@@ -11,7 +11,7 @@ public class dragdrop : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        scaleChange = new Vector3(0.1f, 0.1f, 0.1f);
+        scaleChange = new Vector3(0.05f, 0.05f, 0.05f);
     }
 
     // Update is called once per frame
@@ -30,7 +30,6 @@ public class dragdrop : MonoBehaviour
         //Creates offset so that the object moves relative to where it's being clicked, not the center of the object
         mousePositionOffset = gameObject.transform.position - GetWorldMousePosition();
         transform.localScale += scaleChange;
-        //Debug.Log("On mouse down");
     }
 
     private void OnMouseUp()
