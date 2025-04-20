@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2486926485251118345}
   - component: {fileID: 7919692402672711131}
   m_Layer: 0
-  m_Name: CustomerPrefab
+  m_Name: Peter Garfield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

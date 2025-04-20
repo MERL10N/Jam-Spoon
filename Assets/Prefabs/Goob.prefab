@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1131041489685971027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3018764375640604293, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6088198283133030134, guid: 4662c91930511264db43e4afd45d05ab, type: 3}
+    - target: {fileID: 6784960055418783095, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_Name
+      value: Goob
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: fishRange.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: fishRange.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: canOrderFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: canOrderDrink
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: canOrderFries
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: canOrderNuggets
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: customerFirstName
+      value: Goob
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: canOrderFishPopcorn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390404813095476823, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: canOrderIceCreamOnFries
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916438499031000361, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a6dbf876680a5043bedb13aa26ade2b, type: 3}

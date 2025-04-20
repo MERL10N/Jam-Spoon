@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4471670475028294481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1723293910819706324, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1313146387587983634, guid: e8d74e2fdae878f4294e9a6f4da95de1, type: 3}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039967315717639800, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderBuns
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderFish
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderDrink
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderFries
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: hotDogsRange.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: hotDogsRange.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderHotDogs
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderPopcorn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderSausages
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: customerFirstName
+      value: Gheto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderFishPopcorn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377500179033847046, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: canOrderIceCreamOnFries
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928671075670322726, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
+      propertyPath: m_Name
+      value: Gheto
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75f2bc9d3960d3948b99d826c88c5f3f, type: 3}
