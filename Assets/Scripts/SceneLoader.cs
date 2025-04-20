@@ -10,7 +10,8 @@ public class SceneLoader : MonoBehaviour
     public enum Scene
     {
         MainMenu,
-        joy
+        joy,
+        CustomerTest
     }
     public static SceneLoader Instance;
 
