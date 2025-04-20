@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 09e772bbbd3642d4f95cf48bafb596dc
+guid: a6664680bb8be5444b85ac692e3361af
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2764893301697667340
-    second: BottomMenuBar_0
+      213: 1302723820812287101
+    second: Untitled_Artwork_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BottomMenuBar_0
+      name: Untitled_Artwork_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 114
+        x: 273
+        y: 284
+        width: 1525
+        height: 1476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c01eb811fcfde5620800000000000000
-      internalID: 2764893301697667340
+      spriteID: d7cb4f3b964341210800000000000000
+      internalID: 1302723820812287101
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BottomMenuBar_0: 2764893301697667340
+      Untitled_Artwork_0: 1302723820812287101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
