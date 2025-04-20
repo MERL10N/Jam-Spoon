@@ -3,15 +3,15 @@ using UnityEngine;
 public class HotDogLogic : MonoBehaviour
 {
     public GameObject collidedObject;
-    public GameObject hotdog;
+    public GameObject result;
     public new Collider2D collider2D;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        hotdog = Instantiate(hotdog);
+        //result = Instantiate(result);
         collider2D = GetComponent<Collider2D>();
-        hotdog.SetActive(false);
+        //result.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,6 +28,33 @@ public class HotDogLogic : MonoBehaviour
             {
                 CombineElements(gameObject, collidedObject);
             }
+
+            else if ((tag == "popcorn" && collidedObject.tag == "fish") || (tag == "fish" && collidedObject.tag == "popcorn"))
+            {
+                CombineElements(gameObject, collidedObject);
+            }
+
+            else if ((tag == "fry" && collidedObject.tag == "ice cream") || (tag == "ice cream" && collidedObject.tag == "fry"))
+            {
+                result = GameObject.Find("ice cream fries");
+                result = Instantiate(result);
+                CombineElements(gameObject, collidedObject);
+            }
+
+            else if ((tag == "fry" && collidedObject.tag == "fish") || (tag == "fish" && collidedObject.tag == "fry"))
+            {
+                result = GameObject.Find("fish fries");
+                result = Instantiate(result);
+                CombineElements(gameObject, collidedObject);
+            }
+
+            else if ((tag == "fry" && collidedObject.tag == "nugget") || (tag == "nugget" && collidedObject.tag == "fry"))
+            {
+                result = GameObject.Find("nugget fries");
+                result = Instantiate(result);
+                CombineElements(gameObject, collidedObject);
+            }
+
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -36,15 +63,35 @@ public class HotDogLogic : MonoBehaviour
         {
             collidedObject = collision.gameObject;
         }
-        
+
+        else if ((tag == "popcorn" && collision.gameObject.tag == "fish") || (tag == "fish" && collision.gameObject.tag == "popcorn"))
+        {
+            collidedObject = collision.gameObject;
+        }
+
+        else if ((tag == "fry" && collision.gameObject.tag == "ice cream") || (tag == "ice cream" && collision.gameObject.tag == "fry"))
+        { 
+            collidedObject = collision.gameObject;
+        }
+
+        else if ((tag == "fry" && collision.gameObject.tag == "fish") || (tag == "fish" && collision.gameObject.tag == "fry"))
+        {
+            collidedObject = collision.gameObject;
+        }
+
+        else if ((tag == "fry" && collision.gameObject.tag == "nugget") || (tag == "nugget" && collision.gameObject.tag == "fry"))
+        {
+            collidedObject = collision.gameObject;
+        }
+
     }
 
     public void CombineElements(GameObject element1, GameObject element2)
     {
-        hotdog = Instantiate(hotdog, new Vector3(transform.position.x, transform.position.y, -1.2f), transform.rotation);
+        result = Instantiate(result, new Vector3(transform.position.x, transform.position.y, -1.2f), transform.rotation);
         element1.SetActive(false);
         element2.SetActive(false);
-        hotdog.SetActive(true);
+        result.SetActive(true);
 
     }
 }
