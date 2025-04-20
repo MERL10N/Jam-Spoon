@@ -12,6 +12,9 @@ TagManager:
   - fry
   - ice cream
   - nugget
+  - customer name
+  - customer order
+  - special request
   layers:
   - Default
   - TransparentFX
