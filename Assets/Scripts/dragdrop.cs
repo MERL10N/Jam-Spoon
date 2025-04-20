@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class dragdrop : MonoBehaviour
 {
-    public GameObject gameObject;
-    Vector3 mousePositionOffset;
+    public new GameObject gameObject;
+    private Vector3 mousePositionOffset;
     private Vector3 scaleChange;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,4 +40,5 @@ public class dragdrop : MonoBehaviour
         transform.position = GetWorldMousePosition() + mousePositionOffset;
         CursorController.Instance.SetCursor(CursorController.CursorState.Click);
     }
+    
 }
