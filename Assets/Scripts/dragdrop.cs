@@ -31,12 +31,12 @@ public class dragdrop : MonoBehaviour
     {
         //Creates offset so that the object moves relative to where it's being clicked, not the center of the object
         mousePositionOffset = gameObject.transform.position - GetWorldMousePosition();
-        transform.localScale += scaleChange;
+        transform.localScale *= 1.5f;
     }
 
     private void OnMouseUp()
     {
-        transform.localScale -= scaleChange;
+        transform.localScale /= 1.5f;
 
     }
 
