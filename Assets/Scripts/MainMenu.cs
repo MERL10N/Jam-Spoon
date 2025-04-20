@@ -10,7 +10,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     AudioSource musicSource;
     void Start()
-    {
+    { 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
        playButton.onClick.AddListener(StartGame);
        AudioManager.instance.PlayMusic(menuMusic, musicSource);
     }
