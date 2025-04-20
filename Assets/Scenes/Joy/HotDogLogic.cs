@@ -9,9 +9,7 @@ public class HotDogLogic : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //result = Instantiate(result);
         collider2D = GetComponent<Collider2D>();
-        //result.SetActive(false);
     }
 
     // Update is called once per frame
