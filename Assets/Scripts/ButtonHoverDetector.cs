@@ -17,15 +17,24 @@ public class ButtonHoverDetector : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Mouse entered button!");
+        //Debug.Log("Mouse entered button!");
         rectTransform.localScale = originalScale + scaleChange;
-        Debug.Log(rectTransform.localScale);
+        //Debug.Log(rectTransform.localScale);
         CursorController.Instance.SetCursor(CursorController.CursorState.Hover);
     }
 
+    public void OnMouseDown()
+    {
+        Debug.Log("clicking button");
+        CursorController.Instance.SetCursor(CursorController.CursorState.Click);
+    }
+    public void OnMouseUp()
+    {
+        CursorController.Instance.SetCursor(CursorController.CursorState.Hover);
+    }
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Mouse exited button!");
+        //Debug.Log("Mouse exited button!");
         rectTransform.localScale = originalScale;
         CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
         // End hover logic here

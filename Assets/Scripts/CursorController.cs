@@ -15,7 +15,8 @@ public class CursorController : MonoBehaviour
     [SerializeField]
     private Texture2D hoverCursor;
 
-    [SerializeField] private Texture2D clickCursor;
+    [SerializeField] 
+    private Texture2D clickCursor;
 
     public static CursorController Instance;
 

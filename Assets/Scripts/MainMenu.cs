@@ -13,8 +13,8 @@ public class MainMenu : MonoBehaviour
     { 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-       playButton.onClick.AddListener(StartGame);
-       AudioManager.instance.PlayMusic(menuMusic, musicSource);
+        playButton.onClick.AddListener(StartGame);
+        AudioManager.instance.PlayMusic(menuMusic, musicSource);
     }
 
     private void StartGame()

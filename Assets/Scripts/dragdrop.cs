@@ -32,8 +32,6 @@ public class dragdrop : MonoBehaviour
     private void OnMouseUp()
     {
         transform.localScale /= 1.5f;
-
-        transform.localScale -= scaleChange;
         CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
     }
 
