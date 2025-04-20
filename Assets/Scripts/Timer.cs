@@ -29,6 +29,8 @@ public class Timer : MonoBehaviour
     void Update()
     { 
         timer -= Time.deltaTime;
+        
+        timerText.SetText("Time Left: " + timer.ToString("0"));
 
         if (timer < 0.5 * referenceTimer)
         {
@@ -43,9 +45,8 @@ public class Timer : MonoBehaviour
         if (timer <= 0)
         {
             timer = 0;
+            timerText.SetText("Hah! Loser :3");
         }
-        
-        timerText.SetText("Time Left: " + timer.ToString("0"));
         
     }
 }

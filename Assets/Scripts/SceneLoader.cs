@@ -9,7 +9,7 @@ public class SceneLoader : MonoBehaviour
 {
     public enum Scene
     {
-        MainMenu,
+        Menu,
         joy
     }
     public static SceneLoader Instance;
@@ -31,6 +31,6 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(Scene.MainMenu.ToString());
+        SceneManager.LoadScene(Scene.Menu.ToString());
     }
 }

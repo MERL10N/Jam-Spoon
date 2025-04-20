@@ -56,4 +56,20 @@ public class AudioManager : MonoBehaviour
             MusicSource.Stop();
         }
     }
+
+    public void PauseMusic()
+    {
+        if (MusicSource != null)
+        {
+            MusicSource.Pause();
+        }
+    }
+
+    public void ResumeMusic()
+    {
+        if (MusicSource != null)
+        {
+            MusicSource.UnPause();
+        }
+    }
 }
