@@ -13,13 +13,7 @@ public class dragdrop : MonoBehaviour
     void Start()
     {
         scaleChange = new Vector3(0.05f, 0.05f, 0.05f);
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
     }
 
     private Vector3 GetWorldMousePosition()
@@ -32,18 +26,19 @@ public class dragdrop : MonoBehaviour
         //Creates offset so that the object moves relative to where it's being clicked, not the center of the object
         mousePositionOffset = gameObject.transform.position - GetWorldMousePosition();
         transform.localScale *= 1.5f;
+        CursorController.Instance.SetCursor(CursorController.CursorState.Click);
     }
 
     private void OnMouseUp()
     {
         transform.localScale /= 1.5f;
-
+        CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
     }
 
     private void OnMouseDrag()
     {
         transform.position = GetWorldMousePosition() + mousePositionOffset;
-        
+        CursorController.Instance.SetCursor(CursorController.CursorState.Click);
     }
     
 }

@@ -8,6 +8,9 @@ public class ButtonHoverDetector : MonoBehaviour, IPointerEnterHandler, IPointer
     private Vector3 originalScale;
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
         rectTransform = GetComponent<RectTransform>();
         originalScale = rectTransform.localScale;
     }
@@ -17,12 +20,14 @@ public class ButtonHoverDetector : MonoBehaviour, IPointerEnterHandler, IPointer
         Debug.Log("Mouse entered button!");
         rectTransform.localScale = originalScale + scaleChange;
         Debug.Log(rectTransform.localScale);
+        CursorController.Instance.SetCursor(CursorController.CursorState.Hover);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         Debug.Log("Mouse exited button!");
         rectTransform.localScale = originalScale;
+        CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
         // End hover logic here
     }
 }

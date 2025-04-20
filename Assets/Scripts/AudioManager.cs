@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("Audio Source")]
-    public AudioSource MusicSource;
-    public AudioSource SFX_Source;
-
-    [Header("Audio Clips")]
-    public AudioClip MenuMusic;
-    public AudioClip GameMusic;
+    
+    private AudioSource MusicSource;
+    private AudioSource SFX_Source;
+    
     
     public static AudioManager instance;
 
@@ -28,16 +25,13 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        PlayMusic(MenuMusic);
-    }
-
+    
+    
     // Update is called once per frame
-    public void PlayMusic(AudioClip MusicClip)
+    public void PlayMusic(AudioClip MusicClip, AudioSource MusicSource)
     {
+        this.MusicSource = MusicSource;
+        
         if (MusicSource != null && MusicClip != null)
         {
             MusicSource.clip = MusicClip;
@@ -46,8 +40,9 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySFX(AudioClip SoundClip)
+    public void PlaySFX(AudioClip SoundClip, AudioSource SFX_Source)
     {
+        this.SFX_Source = SFX_Source;
         if (SFX_Source != null && SoundClip != null)
         {
             SFX_Source.PlayOneShot(SoundClip);
