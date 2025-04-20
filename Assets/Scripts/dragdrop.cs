@@ -1,18 +1,15 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
-
-
 
 public class dragdrop : MonoBehaviour
 {
     public new GameObject gameObject;
     private Vector3 mousePositionOffset;
-    private Vector3 scaleChange;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        scaleChange = new Vector3(0.05f, 0.05f, 0.05f);
         CursorController.Instance.SetCursor(CursorController.CursorState.Normal);
     }
 
