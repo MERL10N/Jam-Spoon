@@ -10,13 +10,13 @@ public class SceneLoader : MonoBehaviour
     public enum Scene
     {
         MainMenu,
-        Gameplay
+        joy
     }
-    public static SceneLoader instance;
+    public static SceneLoader Instance;
 
     public void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
     public void LoadScene(Scene scene)
@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNewGame()
     {
-        SceneManager.LoadScene(Scene.Gameplay.ToString());
+        SceneManager.LoadScene(Scene.joy.ToString());
     }
 
     public void LoadMainMenu()

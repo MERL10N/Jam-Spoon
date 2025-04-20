@@ -5,13 +5,19 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField]
     Button playButton;
+    [SerializeField]
+    AudioClip menuMusic;
+    [SerializeField]
+    AudioSource musicSource;
     void Start()
     {
        playButton.onClick.AddListener(StartGame);
+       AudioManager.instance.PlayMusic(menuMusic, musicSource);
     }
 
     private void StartGame()
     {
-        SceneLoader.instance.LoadScene(SceneLoader.Scene.Gameplay);
+        AudioManager.instance.StopMusic();
+        SceneLoader.Instance.LoadScene(SceneLoader.Scene.joy);
     }
 }
