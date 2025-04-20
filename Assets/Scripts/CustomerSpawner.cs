@@ -8,6 +8,7 @@ public class CustomerManager : MonoBehaviour
 
     private GameObject currentActiveCustomer;
     private Dictionary<GameObject, float> customerLastActiveTime = new Dictionary<GameObject, float>();
+    public GameObject GetCurrentCustomer() => currentActiveCustomer;
 
     private void Start()
     {

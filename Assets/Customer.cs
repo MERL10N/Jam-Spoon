@@ -250,6 +250,8 @@ public class Customer : MonoBehaviour
             //customerSpecialResponse.text = specialResponseString;
     }
 
+    public Dictionary<string, int> GetOrder() => new Dictionary<string, int>(orderQuantities);
+
     // Helper class to store food item options
     private class FoodItemOption
     {
