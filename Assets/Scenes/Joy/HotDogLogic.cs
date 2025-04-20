@@ -31,6 +31,8 @@ public class HotDogLogic : MonoBehaviour
 
             else if ((tag == "popcorn" && collidedObject.tag == "fish") || (tag == "fish" && collidedObject.tag == "popcorn"))
             {
+                result = GameObject.Find("fishpopcorn");
+                result = Instantiate(result);
                 CombineElements(gameObject, collidedObject);
             }
 
