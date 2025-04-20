@@ -7,10 +7,6 @@ public class OrderManager : MonoBehaviour
 {
     public Player Player;
     public GameObject SendButton;
-    public GameObject TopLeft;
-    public GameObject TopRight;
-    public GameObject BottomLeft;
-    public GameObject BottomRight;
     public Dictionary<string, int> Order;
     public GameObject Tray;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,10 +15,6 @@ public class OrderManager : MonoBehaviour
     {
         //Player = GameObject.Find("player").GetComponent<Player>();
         Tray = GameObject.Find("tray");
-        TopLeft = GameObject.Find("TopLeft");
-        TopRight = GameObject.Find("TopRight");
-        BottomLeft = GameObject.Find("BottomLeft");
-        BottomRight = GameObject.Find("BottomRight");
     }
     void Start()
     {
@@ -48,12 +40,10 @@ public class OrderManager : MonoBehaviour
     {
         Order = Tray.GetComponent<TrayOrder>().Order;
     }
-    void CheckOrder()
+    bool CheckOrder()
     {
         Dictionary<string, int> CorrectOrder = Player.Order;
-        Dictionary<string, Dictionary<string, int>> SpecialRequest = Player.Request;
-        //dictionary1.Should().Equal(dictionary2);
-        Debug.Log(Equals(Order, CorrectOrder));
+        return Equals(Order, CorrectOrder);
     }
 
     private bool Equals(Dictionary<string, int> x, Dictionary<string, int> y)

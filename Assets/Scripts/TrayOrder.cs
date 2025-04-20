@@ -3,14 +3,12 @@ using UnityEngine;
 
 public class TrayOrder : MonoBehaviour
 {
-    public Dictionary<string, Dictionary<string, int>> Request;
     public Dictionary<string, int> Order;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     private void Awake()
     {
         Order = new Dictionary<string, int>();
-        Request = new Dictionary<string, Dictionary<string, int>>();
     }
     void Start()
     {
