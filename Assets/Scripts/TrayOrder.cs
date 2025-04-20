@@ -23,7 +23,7 @@ public class TrayOrder : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name != "SendButton" && collision.gameObject.name != "SendButton")
+        if (collision.gameObject.name != "SendButton")
         {
             if (!Order.ContainsKey(collision.gameObject.tag))
             {

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class OrderManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class OrderManager : MonoBehaviour
     public GameObject SendButton;
     public Dictionary<string, int> Order;
     public GameObject Tray;
+    public TextMeshProUGUI Dialog;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Awake()
@@ -46,9 +48,20 @@ public class OrderManager : MonoBehaviour
         return Equals(Order, CorrectOrder);
     }
 
-    private bool Equals(Dictionary<string, int> x, Dictionary<string, int> y)
+    public bool Equals(Dictionary<string, int> x, Dictionary<string, int> y)
     {
         // Check whether the dictionaries are equal
-        return x.Count == y.Count && !x.Except(y).Any();
+
+        bool equal = x.Count == y.Count && !x.Except(y).Any();
+        if (equal)
+        {
+            Dialog.text = "Order Success!";
+        }
+        else
+        {
+            Dialog.text = "Order Failed!";
+        }
+
+        return equal;
     }
 }

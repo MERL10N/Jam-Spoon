@@ -16,6 +16,7 @@ TagManager:
   - customer name
   - customer order
   - special request
+  - fishpopcorn
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     {
         Order = new Dictionary<string, int>();
         Order.Add("ice cream", 2);
-        Order.Add("fry", 1);
+        Order.Add("fish", 3);
 
         Request = new Dictionary<string, Dictionary<string, int>>();
         Request.Add("TopLeft", Order);
