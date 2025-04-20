@@ -10,7 +10,6 @@ public class HotDogLogic : MonoBehaviour
     void Start()
     {
         hotdog = Instantiate(hotdog);
-        //collidedObject = GameObject.Find("empty");
         collider2D = GetComponent<Collider2D>();
         hotdog.SetActive(false);
     }
@@ -33,17 +32,18 @@ public class HotDogLogic : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collidedObject = collision.gameObject;
+        if ((tag == "sausage" && collision.gameObject.tag == "bun") || (tag == "bun" && collision.gameObject.tag == "sausage"))
+        {
+            collidedObject = collision.gameObject;
+        }
+        
     }
 
     public void CombineElements(GameObject element1, GameObject element2)
     {
+        hotdog = Instantiate(hotdog, new Vector3(transform.position.x, transform.position.y, -1.2f), transform.rotation);
         element1.SetActive(false);
         element2.SetActive(false);
-        //Destroy(element1);
-        //Destroy(element2);
-
-        Instantiate(hotdog, new Vector3(element1.transform.position.x, element1.transform.position.y, -1.2f), transform.rotation);
         hotdog.SetActive(true);
 
     }
