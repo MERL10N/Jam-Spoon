@@ -1,2 +1,2 @@
-# Jam-Spoon
-CitrusHack 2025 Project
+# Popcorn, Please!
+CitrusHack 2025 Project UI/UX Winner
