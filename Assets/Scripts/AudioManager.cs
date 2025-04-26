@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    
+
+    [SerializeField]
     private AudioSource MusicSource;
+    [SerializeField]
     private AudioSource SFX_Source;
     
     

@@ -17,6 +17,9 @@ TagManager:
   - customer order
   - special request
   - fishpopcorn
+  - fish fries
+  - ice cream fries
+  - nugget fries
   layers:
   - Default
   - TransparentFX

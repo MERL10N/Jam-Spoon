@@ -88,7 +88,7 @@ public class HotDogLogic : MonoBehaviour
 
     public void CombineElements(GameObject element1, GameObject element2)
     {
-        result = Instantiate(result, new Vector3(transform.position.x, transform.position.y, -1.2f), transform.rotation);
+        result = Instantiate(result, new Vector3(transform.position.x, transform.position.y, -1), transform.rotation);
         element1.transform.position *= 100;
         element1.SetActive(false);
         element2.transform.position *= 100;

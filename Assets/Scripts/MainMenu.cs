@@ -20,6 +20,6 @@ public class MainMenu : MonoBehaviour
     private void StartGame()
     {
         AudioManager.instance.StopMusic();
-        SceneLoader.Instance.LoadScene(SceneLoader.Scene.CustomerTest);
+        SceneLoader.Instance.LoadScene(SceneLoader.Scene.joy);
     }
 }

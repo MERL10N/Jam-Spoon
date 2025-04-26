@@ -25,6 +25,7 @@ public class TrayOrder : MonoBehaviour
     {
         if (collision.gameObject.name != "SendButton")
         {
+            Debug.Log(collision.gameObject.tag + " on tray");
             if (!Order.ContainsKey(collision.gameObject.tag))
             {
                 Order.Add(collision.gameObject.tag, 1);
@@ -38,9 +39,15 @@ public class TrayOrder : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.tag + " off tray");
         if (Order.ContainsKey(collision.gameObject.tag))
         {
             Order[collision.gameObject.tag] -= 1;
-        }  
+        }
+
+        if (Order[collision.gameObject.tag] <= 0)
+        {
+            Order.Remove(collision.gameObject.tag);
+        }
     }
 }
